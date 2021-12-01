@@ -5,6 +5,8 @@ body {
   overflow: hidden;
 }
 
+/* 吹き出し立ち絵 */
+.MuiPaper-root.sc-edERGn.kEQhkG.MuiPaper-elevation1.MuiPaper-rounded>img,
 /* カットイン */
 .sc-tAExr,
   /* 背景 */
@@ -38,12 +40,12 @@ body {
 }
 
 /**************************
-  　吹き出し
+  吹き出し
   **************************/
 /* 全体 */
 .MuiPaper-root {
-  max-width: 800px;
-  background-color: black;
+  max-width: 850px;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 /* 全体ぼかし */
@@ -51,9 +53,26 @@ body {
   .sc-hJZKUC.lodvgl {
   filter: drop-shadow(0 0 20px rgb(0, 0, 0));
 }
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
 
+/* 吹き出し部分 背景 */
 .MuiPaper-root.sc-jlsrNB.ldYVfF.MuiPaper-elevation1.MuiPaper-rounded {
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+  height: 200px;
+  background-image: url(https://takamineA.github.io/obsCustomCSS/2021_11/balloon.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+/* padding調整 */
+.MuiPaper-root.ldYVfF .MuiToolbar-gutters {
+  padding: 30px 50px 0 !important;
+}
+.MuiPaper-root.ldYVfF .cvajyX {
+  padding: 0px 50px 15px !important;
+  height: 70px;
 }
 
 /* フォント変更 */
